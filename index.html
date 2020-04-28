@@ -14,11 +14,25 @@
      align-items:center;
      z-index:99999;
      }
-     
+     .loading > img
+      {
+         width:100px;
+      }
+      .loading.hidden
+      {
+         animation: fadeout 3s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
   </style>
   </head>
   <body >
- <div class="loading">
+ <div class="loading hidden">
     <img src="giphy.gif">
   </div>
 <h1>JavaScript Number Object Properties
